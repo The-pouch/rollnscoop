@@ -1,54 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title> Roll &amp; Scoop Ice cream Rolls </title>
+    <title> Roll & Scoop Ice cream Rolls </title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://rollnscoop.testes/css/app_layout.css" as="style"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="https://roll-n-scoop-app.onrender.com/css/app_layout.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="https://rollnscoop.testes/css/app_layout.css">
+        <link rel="stylesheet" href="https://roll-n-scoop-app.onrender.com/css/app_layout.css">
     </noscript>
     <style>
         /*Reset*/
-        * {
+
+        *,
+        *::after,
+        *::before {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
 
+        * {
+            list-style: none;
         }
 
         html {
             font-family: 'Roboto', sans-serif;
-            min-height: 100vw;
             font-size: 62.5%;
-            min-width: 90vw;
-            max-width: 100vw;
-            margin: 0 auto;
-
+            width: 100%;
+            overflow-x: hidden;
         }
 
         body {
-            font-size: 1.6rem;
             min-height: 100vh;
-            min-width: 300px;
-            margin: 0vh auto;
+            font-size: 1.6rem;
+            margin: 0 auto;
             background-color: #FFC0CB;
             color: #000000;
-            scrollbar-width: thin;
+            overflow-x: hidden;
         }
 
         .app-container {
             display: flex;
-            flex-flow: column wrap;
+            flex-flow: column;
             justify-content: space-between;
             align-items: center;
         }
-
-        .title-text {
-            flex: 1;
-        }
+      
 
         .main-container {
             display: flex;
@@ -57,20 +57,23 @@
             align-items: center;
         }
 
+        .header {
+            display: flex;
+            flex-flow: column ;
+            align-items: center;
+        }
+
         .title {
             text-align: center;
-            font-size: 9rem;
+            font-size: 4rem;
             margin: 0;
-            margin-top: 15vh;
-            padding: 0 5vw;
+            margin-top: 16rem;
             text-shadow: #7DC4BD 2px 5px;
         }
 
         .sub-title {
             text-align: center;
             font-size: 2rem;
-            margin: 2vh;
-            padding: 0 20vw;
             text-shadow: #7DC4BD 1px 2px;
         }
     </style>
@@ -78,285 +81,320 @@
 
 <body>
     <div class="app-container">
-        <header>
+        <div class="header">
             <nav class="nav-container">
-                <a>
-                    <div>
-                        <p>Roll &amp; Scoop Joint</p>
-                    </div>
-                </a>
-                <a>
-                </a>
-                <div class="nav-links"><a>
-                    </a><a href="#best-sellers-title">
-                        <p>Best Sellers</p>
-                    </a>
-                    <a href="#about-us-title">
-                        <p>About Us</p>
-                    </a>
-                </div>
 
-            </nav>
-            <style>
-                header {
-                    width: 100vw;
-                    padding: .1rem;
-                    display: flex;
-                    flex-flow: column;
-                    z-index: 500;
-                }
-
-                .nav-container {
-                    position: fixed;
-                    top: 0;
-                    width: 100vw;
-                    padding: 2rem;
-                    margin: 0;
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-between;
-                    align-items: center;
-                    background-color: hsla(350, 93%, 77%, 5);
-                }
-
-                .nav-links {
-                    display: flex;
-                }
-
-                .nav-links a {
-                    padding: 1rem;
-                }
-            </style>
-            <div class="title-text">
-                <h1 class="title">Roll &amp; Scoop Joint</h1>
-                <h2 class="sub-title">We Roll it, You Scoop it!</h2>
-            </div>
-        </header>
-        <main>
-            <div class="main-container">
-                <h3 id="best-sellers-title">Don't let our best deals <span>MELT AWAY!</span></h3>
-                <section class="best-seller-container">
-                    <div class="product-container">
-                        <picture>
-                            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__2_r99upm?_a=AAFIKDQ"
-                                alt="App Screenshot of browse foods screen" loading="lazy" width="250" height="250">
-                        </picture>
-                        <a>
-                            <p>Bogoya Splash Special</p>
-                        </a>
-                    </div>
-                    <div class="product-container">
-                        <picture>
-                            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__21_i6rarj?_a=AAFIKDQ"
-                                alt="App Screenshot of browse foods screen" loading="lazy" width="250" height="250">
-                        </picture>
-                        <a>
-                            <p>Cream Liqueur Special</p>
-                        </a>
-                    </div>
-                    <div class="product-container">
-                        <picture>
-                            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__3_zy8rcb?_a=AAFIKDQ"
-                                alt="App Screenshot of browse foods screen" loading="lazy" width="250" height="250">
-                        </picture>
-                        <a>
-                            <p>THC/CBD Special</p>
-                        </a>
-                    </div>
-                    <div class="product-container">
-                        <picture>
-                            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__4_y97tal?_a=AAFIKDQ"
-                                alt="App Screenshot of browse foods screen" loading="lazy" width="250" height="250">
-                        </picture>
-                        <a>
-                            <p>BYOT Special</p>
-                        </a>
-                    </div>
-                    <div class="product-container">
-                        <picture>
-                            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__5_ayzjkl?_a=AAFIKDQ"
-                                alt="App Screenshot of browse foods screen" loading="lazy" width="250" height="250">
-                        </picture>
-                        <a>
-                            <p>Strawberry Special</p>
-                        </a>
-                    </div>
-                    <div class="product-container">
-                        <picture>
-                            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__6_cngwos?_a=AAFIKDQ"
-                                alt="App Screenshot of browse foods screen" loading="lazy" width="250" height="250">
-                        </picture>
-                        <a>
-                            <p>Caramel &amp; Coffee Special</p>
-                        </a>
-                    </div>
-                    <div class="product-container">
-                        <picture>
-                            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__20_yn8f11?_a=AAFIKDQ"
-                                alt="App Screenshot of browse foods screen" loading="lazy" width="250" height="250">
-                        </picture>
-                        <a>
-                            <p>Blueberry Special</p>
-                        </a>
-                    </div>
-                    <div class="product-container">
-                        <picture>
-                            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__18_o3bdjb?_a=AAFIKDQ"
-                                alt="App Screenshot of browse foods screen" loading="lazy" width="250" height="250">
-                        </picture>
-                        <a>
-                            <p>BYOT Special</p>
-                        </a>
-                    </div>
-                </section>
-
-                <style>
-                    .main-container h3 {
-                        border-top: #B55DFF .1rem solid;
-                        margin-top: 3vh;
-                        padding: 1rem 5vw 0;
-                        text-align: center;
-                    }
-
-                    .best-seller-container {
-                        max-width: 90vw;
-                        overflow-x: auto;
-                        scrollbar-color: white #ff5dff;
-                        scrollbar-width: thin;
-                        scroll-snap-type: x mandatory;
-                        -webkit-overflow-scrolling: touch;
-                        -ms-overflow-style: none;
-                        scroll-behavior: smooth;
-                        display: flex;
-                        justify-content: flex-start;
-                        margin: 2rem auto;
-                        padding: 2rem 2vw;
-                        align-items: center;
-                        gap: 2rem 4rem;
-                        z-index: 200;
-                        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-                    }
-
-                    .product-container {
-                        display: flex;
-                        flex-flow: column wrap;
-                        align-items: center;
-                        border: white.4rem solid;
-                        border-radius: 10px;
-                        margin: .5rem auto;
-                        padding: 2.3rem;
-                        scroll-snap-align: center;
-                        z-index: 220;
-                    }
-
-                    .product-container a {
-                        color: black;
-                        padding: 2rem;
-                    }
-
-                    img {
-                        aspect-ratio: 1 / 1;
-                        height: 250px;
-                        width: 250px;
-                    }
-                </style>
-                <section class="about-us-container">
-                    <article class="about-us-copy">
-                        <h3 id="about-us-title">About Us</h3>
-
-                        <p> Welcome to our ice cream rolls parlor in Jinja! At our parlor, we're passionate about
-                            serving up delicious
-                            ice cream rolls that are made fresh right in front of your eyes using only the finest
-                            ingredients.
-                        </p>
-                        <picture>
-                            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__19_d246dx?_a=AAFIKDQ"
-                                alt="App Screenshot of browse foods screen" loading="lazy" width="250" height="250">
-                        </picture>
-                        <p> Our team
-                            of ice cream enthusiasts is dedicated to providing a unique and unforgettable experience for
-                            our customers.
-                        </p>
-                        <picture>
-                            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__4_y97tal?_a=AAFIKDQ"
-                                alt="App Screenshot of browse foods screen" loading="lazy" width="250" height="250">
-                        </picture>
-                        <br>
-                        <p>
-                            Our menu features a wide variety of flavors to suit every taste, from classic favorites like
-                            chocolate and
-                            strawberry to exotic blends like green tea and mango. We take great pride in our commitment
-                            to quality and
-                            customer service, and we believe that our attention to detail sets us apart from other ice
-                            cream parlors in
-                            Jinja.
-                        </p>
-                        <br>
-                        <p>
-                            Whether you're looking for a sweet treat to cool off on a hot day or a fun outing with
-                            friends and family,
-                            our parlor has something for everyone. So why not come visit us and indulge in one of our
-                            delicious
-                            hand-rolled ice cream rolls? We guarantee you won't be disappointed!</p>
-                    </article>
-                </section>
-                <style>
-                    .about-us-container {
-                        display: flex;
-                        flex-flow: column wrap;
-                        background-color: white;
-                        color: black;
-                        padding: 2rem 1.6rem;
-                        width: 100vw;
-                        overflow: auto;
-                    }
-
-                    .about-us-container p {
-                        text-align: left;
-                        font-size: 2rem;
-                    }
-
-                    .about-us-container h3 {
-                        margin: 0;
-
-                    }
-
-                    .about-us-container article {
-                        display: flex;
-                        padding: 2rem 4rem;
-                        flex-flow: column wrap;
-                        align-items: flex-start;
-                    }
-
-                    .about-us-container picture {
-                        align-self: center;
-                        padding: 1rem;
-                    }
-
-                    #about-us-title {
-                        align-self: center;
-                    }
-                </style>
-            </div>
-        </main>
-        <footer>
-            <p>© 2023 Dev Dakii</p>
-        </footer>
-        <style>
-            footer {
-                width: 100vw;
-                height: 30vh;
-                max-height: 40vh;
-                overflow: hidden;
-                flex: 1;
-                display: flex;
-                justify-content: center;
-                padding: 1.2rem;
-                background-color: #BED0FD;
-                color: black;
-                margin-top: 2rem;
-            }
-        </style>
+    <div>
+        <p>Roll & Scoop Joint</p>
     </div>
+
+    <div>
+        <img src="/images/menu-icon.svg" id="open-menu-button" onclick="openMenu()" class="hamburger">
+        <img src="/images/close-icon.svg" id="close-menu-button" onclick="closeMenu()" class="hamburger">
+    </div>
+
+
+    <div id="menu-container">
+
+        <ul class="menu">
+            <li>
+                <a href="#best-sellers-title">
+                    <p>Best Sellers</p>
+                </a>
+            </li>
+            <li>
+                <a href="#about-us-title">
+                    <p>About Us</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+<style>
+
+    .nav-container {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 2rem;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: hsla(350, 93%, 77%, 5);
+        z-index: 2;
+    }
+
+    #menu-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .menu a {
+        padding: 1rem;
+    }
+
+    .menu p {
+        color: aliceblue;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+
+    #close-menu-button {
+        z-index: -4;
+        width: 0;
+        height: 0;
+    }
+</style>
+            <div class="title-text-container">
+    <h1 class="title" onclick="openMenu()">Roll & Scoop Joint</h1>
+    <h2 class="sub-title">We Roll it, You Scoop it!</h2>
+</div>
+<style>
+    .title-text-container {
+            max-width: 80%;
+        }
+
+</style>        </div>
+        <main><div class="main-container">
+        <!-- Best sellers-->
+        <h3 id="best-sellers-title">Don't let our best deals <span>MELT AWAY!</span></h3>
+<section class="best-seller-container">
+    <div class="product-container">
+        <picture>
+            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__2_r99upm?_a=AAFIKDQ"
+                alt="App Screenshot of browse foods screen" width="250" height="250" loading="lazy" />
+        </picture>
+        <a>
+            <p>Bogoya Splash Special</p>
+        </a>
+    </div>
+    <div class="product-container">
+        <picture>
+            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__21_i6rarj?_a=AAFIKDQ"
+                alt="App Screenshot of browse foods screen" width="250" height="250" loading="lazy" />
+        </picture>
+        <a>
+            <p>Cream Liqueur Special</p>
+        </a>
+    </div>
+    <div class="product-container">
+        <picture>
+            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__3_zy8rcb?_a=AAFIKDQ"
+                alt="App Screenshot of browse foods screen" width="250" height="250" loading="lazy" />
+        </picture>
+        <a>
+            <p>THC/CBD Special</p>
+        </a>
+    </div>
+    <div class="product-container">
+        <picture>
+            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__4_y97tal?_a=AAFIKDQ"
+                alt="App Screenshot of browse foods screen" width="250" height="250" loading="lazy" />
+        </picture>
+        <a>
+            <p>BYOT Special</p>
+        </a>
+    </div>
+    <div class="product-container">
+        <picture>
+            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__5_ayzjkl?_a=AAFIKDQ"
+                alt="App Screenshot of browse foods screen" width="250" height="250" loading="lazy" />
+        </picture>
+        <a>
+            <p>Strawberry Special</p>
+        </a>
+    </div>
+    <div class="product-container">
+        <picture>
+            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__6_cngwos?_a=AAFIKDQ"
+                alt="App Screenshot of browse foods screen" width="250" height="250" loading="lazy" />
+        </picture>
+        <a>
+            <p>Caramel & Coffee Special</p>
+        </a>
+    </div>
+    <div class="product-container">
+        <picture>
+            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__20_yn8f11?_a=AAFIKDQ"
+                alt="App Screenshot of browse foods screen" width="250" height="250" loading="lazy" />
+        </picture>
+        <a>
+            <p>Blueberry Special</p>
+        </a>
+    </div>
+    <div class="product-container">
+        <picture>
+            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__18_o3bdjb?_a=AAFIKDQ"
+                alt="App Screenshot of browse foods screen" width="250" height="250" loading="lazy" />
+        </picture>
+        <a>
+            <p>BYOT Special</p>
+        </a>
+    </div>
+</section>
+
+<style>
+    .main-container h3 {
+        border-top: #B55DFF .1rem solid;
+        margin-top: 3vh;
+        padding: 1rem 5rem 0;
+        text-align: center;
+    }
+
+    #best-sellers-title {
+        font-size: 2rem;
+    }
+
+    .best-seller-container {
+        width: 90vw;
+        overflow-x: auto;
+        scrollbar-color: white #ff5dff;
+        scrollbar-width: thin;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+        display: flex;
+        justify-content: flex-start;
+        margin: 2rem auto;
+        padding: 2rem 2vw;
+        align-items: center;
+        gap: 2rem 4rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .product-container {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        border: white.4rem solid;
+        border-radius: 10px;
+        margin: .5rem auto;
+        padding: 2.3rem;
+        scroll-snap-align: center;
+    }
+
+    .product-container a {
+        color: black;
+        padding: 2rem;
+    }
+
+    img {
+        aspect-ratio: 1 / 1;
+        height: 250px;
+        width: 250px;
+    }
+
+</style>        
+        <!-- About us-->
+        <section class="about-us-container">
+    <div class="about-us-copy">
+        <h3 id="about-us-title">About Us</h3>
+        
+        <p> Welcome to our ice cream rolls parlor in Jinja! At our parlor, we're passionate about serving up delicious
+            ice cream rolls that are made fresh right in front of your eyes using only the finest ingredients.
+        </p>
+        <picture>
+            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__19_d246dx?_a=AAFIKDQ"
+                alt="App Screenshot of browse foods screen" width="250" height="250" loading="lazy" />
+        </picture>
+        <p> Our team
+            of ice cream enthusiasts is dedicated to providing a unique and unforgettable experience for our customers.
+        </p>
+        <picture>
+            <img src="https://res.cloudinary.com/the-pouch/image/upload/c_fill,h_250,w_250/v1/roll_n_scoop/rolls/rolled_ice_cream__4_y97tal?_a=AAFIKDQ"
+                alt="App Screenshot of browse foods screen" width="250" height="250" loading="lazy" />
+        </picture>
+        <br />
+        <p>
+            Our menu features a wide variety of flavors to suit every taste, from classic favorites like chocolate and
+            strawberry to exotic blends like green tea and mango. We take great pride in our commitment to quality and
+            customer service, and we believe that our attention to detail sets us apart from other ice cream parlors in
+            Jinja.
+        </p>
+        <br />
+        <p>
+            Whether you're looking for a sweet treat to cool off on a hot day or a fun outing with friends and family,
+            our parlor has something for everyone. So why not come visit us and indulge in one of our delicious
+            hand-rolled ice cream rolls? We guarantee you won't be disappointed!</p>
+        </div>
+</section>
+<style>
+    .about-us-container {
+        display: flex;
+        flex-flow: column wrap;
+        background-color: white;
+        color: black;
+        width: 100%;
+        padding: 2rem 1.6rem;
+        overflow: auto;
+    }
+
+    .about-us-container p {
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .about-us-container h3 {
+        margin: 0;
+
+    }
+
+    .about-us-copy  {
+        display: flex;
+        padding: 2rem 4rem;
+        flex-flow: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .about-us-container picture {
+        align-self: center;
+        padding: 1rem;
+    }
+    
+    #about-us-title {   
+        align-self: center;
+    }
+</style>    </div></main>
+        <footer>
+    <p>© 2023 Dev Dakii</p>
+</footer>
+<style>
+    footer {
+        width: 100%;
+        height: 30vh;
+        max-height: 40vh;
+        overflow: hidden;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        padding: 1.2rem;
+        background-color: #BED0FD;
+        color: black;
+        margin-top: 2rem;
+    }
+</style>    </div>
+    <script src="/rollnscoop.js"></script>
 </body>
+
 </html>
